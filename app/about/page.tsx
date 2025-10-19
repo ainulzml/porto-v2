@@ -22,12 +22,12 @@ import gsap from 'gsap';
 
 
 const About = () => {
-  const text = "Evan Stefanus Candra"
+  const text = "Ainul Muzammil"
   const view = useRef(null)
   const scrollView = useInView(view, {
     margin : '-100px 0px'
   })
-  const quotes = "it is not things trouble us but our judgements about things - Epictetus"
+  const quotes = "do everything tell nothing"
 
   return (
     <motion.div  className="h-full" initial={{y: "-200vh"}}
