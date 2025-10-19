@@ -19,7 +19,10 @@
     "portfolio": "file:",
     "react": "^18",
     "react-dom": "^18",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.21.0",
+    "gray-matter": "^4.0.3",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",

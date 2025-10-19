@@ -9,7 +9,18 @@ import { usePathname } from 'next/navigation';
 const TransitionMenu = ({children} : any) => {
   
   const pathName = usePathname()
+  function humanizePath(path: string) {
+    if (!path) return ''
+    const parts = path.split('/').filter(Boolean)
+    if (parts.length === 0) return ''
+    const last = parts[parts.length - 1]
+    const decoded = decodeURIComponent(last)
+    const replaced = decoded.replace(/[-_]+/g, ' ')
+    // Title case
+    return replaced.replace(/\b\w/g, (c) => c.toUpperCase())
+  }
 
+  const label = humanizePath(pathName)
   return (
     <AnimatePresence mode='wait'>
         <div key={pathName} className="text-slate-600 w-screen h-screen bg-gradient-to-b from-slate-300 via-slate-200 to-blue-200 overflow-x-hidden">
@@ -19,7 +30,7 @@ const TransitionMenu = ({children} : any) => {
           animate={{opacity:0}}
           exit={{display : "none"}}
           transition={{duration:0.7, ease:"easeOut"}}>
-            {pathName.substring(1).replace(/%20/g, ' ').replace(/\//g, '').replace(/detail/g, '')}
+            {label}
           </motion.div>
           <motion.div className='h-screen w-screen fixed rounded-t-[100px] bottom-0 bg-slate-700 z-30' initial={{height:"140vh"}} animate={{height:"0vh", transition:{delay:0.5}}}>
           </motion.div>
