@@ -34,42 +34,39 @@ export default function Home() {
       animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
       <div ref={container} className="home-container h-full mx-5 mt-40 md:gap-14 lg:mx-44">
        <div className="mt-10 flex flex-col justify-center items-center">
-          <h1 className="text-[30px] font-bold lg:text-5xl mb-2 text-slate-500 text-awal">Crafting, Design, As a</h1>
+          <h1 className="text-[30px] font-bold lg:text-5xl mb-2 text-slate-500 text-awal">not here for</h1>
           <div className="text-[37px] font-bold lg:text-5xl sm:mb-4 text-slate-800 flex gap-2 md:gap-8">
             <div className="flex md:gap-3 text1">
               <p>F</p>
-              <p>r</p>
               <p>o</p>
-              <p>n</p>
-              <p>t</p>
+              <p>l</p>
+              <p>l</p>
+              <p>o</p>
+              <p>w</p>
             </div>
             
             <div className="flex md:gap-3 text2">
-              <p>E</p>
-              <p>n</p>
-              <p>d</p>
+              <p>T</p>
+              <p>h</p>
+              <p>e</p>
             </div>
             
             <div className="flex md:gap-3 text3">
-              <p>D</p>
-              <p>e</p>
-              <p>v</p>
-              <p>e</p>
-              <p>l</p>
-              <p>o</p>
-              <p>p</p>
-              <p>e</p>
+              <p>T</p>
               <p>r</p>
+              <p>e</p>
+              <p>n</p>
+              <p>d</p>
             </div>
             
           </div>
           
           <h1 className="mx-5 md:mx-0 mb-2 sm:mb-0 font-semibold text-lg sm:text-base lg:text-3xl text-tengah"> 
-            I do  
+            I just keep  
             <span className="inline-block ml-1">
               <Typewriter 
               options={{
-                strings : ["JavaScript.", "TypeScript.", "PHP."],
+                strings : ["learning.", "doing.", "crafting.", "sharing."],
                 autoStart : true,
                 loop : true,  
                 delay : 200,
@@ -78,7 +75,7 @@ export default function Home() {
             /> 
             </span>
           </h1>
-          <p className="mx-5 my-[13px] hidden md:block md:mx-0 font-semibold lg:text-xl text-menengah-akhir">Feel free to know me more by clicking the “about me” button below. Happy coding fellas!</p>
+          <p className="mx-5 my-[13px] hidden md:block md:mx-0 font-semibold lg:text-xl text-menengah-akhir">Feel free to know me more by clicking the “about me” button below. Nice to meet you</p>
           <div className="mx-5 md:mx-0 flex justify-center md:flex-none tombol">
             <MenuBooth />
           </div>
