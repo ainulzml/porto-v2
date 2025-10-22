@@ -14,7 +14,7 @@ const Hamburger = () => {
       {url : "/", title : "Home"},
       {url : "/about", title : "About"},
       {url : "/blog", title : "Blog"},
-      {url : "/works", title : "Works"},
+      //{url : "/works", title : "Works"},
       {url : "/contact", title : "Contact"}
   ];
 
