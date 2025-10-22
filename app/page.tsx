@@ -26,7 +26,7 @@ export default function Home() {
 
 
 
-  // const text = "Front End Web Developer"
+  
 
   return (
     <div>
@@ -75,7 +75,7 @@ export default function Home() {
             /> 
             </span>
           </h1>
-          <p className="mx-5 my-[13px] hidden md:block md:mx-0 font-semibold lg:text-xl text-menengah-akhir">Feel free to know me more by clicking the “about me” button below. Nice to meet you</p>
+          <p className="mx-5 my-[13px] hidden md:block md:mx-0 font-semibold lg:text-xl text-menengah-akhir">Feel free to know me more by clicking button below. Nice to meet you</p>
           <div className="mx-5 md:mx-0 flex justify-center md:flex-none tombol">
             <MenuBooth />
           </div>
